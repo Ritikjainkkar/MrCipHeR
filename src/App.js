@@ -18,13 +18,16 @@ function App() {
               <Route exact path="/">
                 <HomePage />
               </Route>
+              <Route exact path="/home">
+                <HomePage />
+              </Route>
               <Route exact path="/exchange">
                 <Exchanges />
               </Route>
               <Route exact path="/cryptocurrencies">
                 <Cryptocurrencies />
               </Route>
-              <Route exact path="/crypto/:coidId">
+              <Route exact path="/crypto/:coinId">
                 <CryptoDetails />
               </Route>
               <Route exact path="/news">
